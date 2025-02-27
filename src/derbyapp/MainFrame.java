@@ -208,7 +208,7 @@ public class MainFrame extends javax.swing.JFrame {
                 DBConnection db = new DBConnection();
                 try{
                     db.connect();
-                    db.createTable();
+                    //db.createTable();
                 } catch (ClassNotFoundException ex){
                     ex.printStackTrace();
                 }
