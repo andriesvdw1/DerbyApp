@@ -47,7 +47,9 @@ public class DBConnection {
             String query= "Create Table Student(StudentID varchar(20),"
                     +" name varchar(20), surname varchar(20)";
             this.con.createStatement().execute(query);
+            System.out.println("Created table");
         } catch (SQLException ex){
+            System.out.println("SQL error when attempting to create table");
             ex.printStackTrace();
         }
     }
